@@ -23,7 +23,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/jape/catkin_ws/src/fetch_gazebo/fetch_gazebo/models/stack_box_com.stl</uri>
+            <uri>model://stack_box_com.stl</uri>
             <scale>0.0015 0.0015 0.002</scale>
           </mesh>
         </geometry>
@@ -50,7 +50,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/jape/catkin_ws/src/fetch_gazebo/fetch_gazebo/models/stack_box_com.stl</uri>
+            <uri>model://stack_box_com.stl</uri>
             <scale>0.0015 0.0015 0.002</scale>
           </mesh>
         </geometry>
