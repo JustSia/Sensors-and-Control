@@ -9,28 +9,48 @@
     </include>
 
     <include>
-      <uri>model://cafe_table</uri>
-      <name>table1</name>
-      <pose>1 0 -0.1 0 0 0</pose>
+      <uri>model://ambulance</uri>
+      <name>cube</name>
+      <pose>0.75 0.25 0.8 0 0 0</pose>
+    </include>
+
+	
+    <include>
+      <uri>model://coke_can</uri>
+      <name>coke</name>
+      <pose>0.75 -0.25 0.8 0 0 0</pose>
     </include>
 
     <include>
-      <uri>model://demo_cube</uri>
-      <name>cube1</name>
-      <pose>0.65 0.25 0.8 0 0 0</pose>
+      <uri>model://cafe_table</uri>
+      <name>table2</name>
+      <pose>0.3 1.1 -0.1 0 0 0</pose>
     </include>
 	
     <include>
-      <uri>model://demo_cube2</uri>
-      <name>cube2</name>
-      <pose>0.65 -0.25 0.8 0 0 0</pose>
+      <uri>model://stack_box</uri>
+      <name>stackbox1</name>
+      <pose>0 0.75 0.8 0 0 0</pose>
+    </include>
+	
+    <include>
+      <uri>model://stack_box</uri>
+      <name>stackbox2</name>
+      <pose>0.16 0.75 0.8 0 0 0</pose>
+    </include>
+	
+	<include>
+      <uri>model://kitchen_dining</uri>
+      <name>kitchen</name>
+      <pose>-4.2 -1.7 0 0 0 1.54</pose>
+    </include>
+	
+	<include>
+      <uri>model://cafe_table</uri>
+      <name>table2</name>
+      <pose>1.1 0 -0.1 0 0 0</pose>
     </include>
 
-    <include>
-      <uri>model://cylinder</uri>
-      <name>cylinder</name>
-      <pose>0.65 0 0.8 0 0 0</pose>
-    </include>
 
   </world>
 </sdf>

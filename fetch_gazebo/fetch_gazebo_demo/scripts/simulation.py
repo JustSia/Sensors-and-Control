@@ -292,20 +292,20 @@ if __name__ == "__main__":
         pass
 
     # Setup clients
-    #move_base = MoveBaseClient()
-    #torso_action = FollowTrajectoryClient("torso_controller", ["torso_lift_joint"])
+    move_base = MoveBaseClient()
+    torso_action = FollowTrajectoryClient("torso_controller", ["torso_lift_joint"])
     head_action = PointHeadClient()
     grasping_client = GraspingClient()
 
     # Move the base to be in front of the table
     # Demonstrates the use of the navigation stack
-    #rospy.loginfo("Moving to table...")
+    rospy.loginfo("Moving to table...")
     #move_base.goto(2.250, 3.118, 0.0)
     #move_base.goto(2.750, 3.118, 0.0)
 
     # Raise the torso using just a controller
-    #rospy.loginfo("Raising torso...")
-    #torso_action.move_to([0.4, ])
+    rospy.loginfo("Raising torso...")
+    torso_action.move_to([0.4, ])
 
     # Point the head at the cube we want to pick
     # head_action.look_at(3.7, 3.18, 0.0, "map")
@@ -342,29 +342,36 @@ if __name__ == "__main__":
             fail_ct += 1
 
         # Tuck the arm
-        #grasping_client.tuck()
+        
 
         # Lower torso
         #rospy.loginfo("Lowering torso...")
         #torso_action.move_to([0.0, ])
 
         # Move to second table
-        #rospy.loginfo("Moving to second table...")
-        #move_base.goto(-3.53, 3.75, 1.57)
-        #move_base.goto(-3.53, 4.15, 1.57)
+        rospy.loginfo("Moving to second table...")
+        #move_base.goto(0, 0, 3.141592654*130/180)
+        move_base.goto(0, 0, 3.141592654*90/180)
 
         # Raise the torso using just a controller
-        #rospy.loginfo("Raising torso...")
-        #torso_action.move_to([0.4, ])
+        rospy.loginfo("Raising torso...")
+        torso_action.move_to([0.4, ])
 
         # Place the block
         while not rospy.is_shutdown() and cube_in_grapper:
             rospy.loginfo("Placing object...")
             pose = PoseStamped()
             pose.pose = cube.primitive_poses[0]
-	    pose.pose.position.x += 0.1
-            pose.pose.position.y += 0.1
-            pose.pose.position.z += 0.02
+            print(cube.primitive_poses[0])
+            print(i)
+            if (i == 1):
+                pose.pose.position.x = 0.65
+                pose.pose.position.y *= -1.4
+                pose.pose.position.z += 0.08
+            else:
+                pose.pose.position.x = 0.7
+                pose.pose.position.y *= -0.8
+                pose.pose.position.z += 0.1
             pose.header.frame_id = cube.header.frame_id
             if grasping_client.place(cube, pose):
                 cube_in_grapper = False
@@ -380,8 +387,12 @@ if __name__ == "__main__":
         grasping_client.intermediate_stow()
         grasping_client.stow()
         rospy.loginfo("Finished")
+        print(i)
+        if (i == 2):
+            rospy.signal_shutdown('Shutting Down')
 	i += 1
         #torso_action.move_to([0.0, ])
+        move_base.goto(0, 0, 0.8)
 			
 
 

@@ -1,0 +1,3 @@
+fetch_robot_sim/Location_3D coords
+---
+moveit_msgs/RobotTrajectory traj

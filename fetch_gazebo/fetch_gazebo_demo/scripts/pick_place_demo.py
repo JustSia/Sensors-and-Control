@@ -198,8 +198,8 @@ class GraspingClient(object):
                obj.object.primitives[0].dimensions[0] > 0.25:
                 continue
             # has to be on table
-            if obj.object.primitive_poses[0].position.z < 0.5:
-                continue
+            #if obj.object.primitive_poses[0].position.z < 0.5:
+            #    continue
             print obj.object.primitive_poses[0], obj.object.primitives[0]
             return obj.object, obj.grasps
         # nothing detected

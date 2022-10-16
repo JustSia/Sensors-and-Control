@@ -2,16 +2,17 @@
 
 <launch>
 
+  <!-- Start navigation -->
+  <include file="$(find fetch_gazebo_demo)/launch/fetch_nav.launch" />
+
   <!-- Start MoveIt -->
   <include file="$(find fetch_moveit_config)/launch/move_group.launch" >
     <arg name="info" value="true"/><!-- publish grasp markers -->
   </include>
 
   <!-- Start Perception -->
-
-
   <node name="basic_grasping_perception" pkg="simple_grasping" type="basic_grasping_perception" >
-    <rosparam command="load" file="$(find fetch_gazebo_demo)/config/simple_grasping.yaml" /> <!-- 完全不懂这是啥 -->
+    <rosparam command="load" file="$(find fetch_gazebo_demo)/config/simple_grasping.yaml" /> 
   </node>
 
   <!-- Start Simulation -->
