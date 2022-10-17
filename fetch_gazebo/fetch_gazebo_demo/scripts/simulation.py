@@ -181,12 +181,7 @@ class GraspingClient(object):
 		    if len(obj.grasps) < 1:
 		        continue
 		    # check size
-		    if obj.object.primitives[0].dimensions[0] < 0.05 or \
-		       obj.object.primitives[0].dimensions[0] > 0.1 or \
-		       obj.object.primitives[0].dimensions[0] < 0.05 or \
-		       obj.object.primitives[0].dimensions[0] > 0.1 or \
-		       obj.object.primitives[0].dimensions[0] < 0.05 or \
-		       obj.object.primitives[0].dimensions[0] > 0.1:
+		    if obj.object.primitives[0].dimensions[0] < 0 and obj.object.primitives[0].dimensions[0] > 1000:
 		        continue
 		    # has to be on table
 		    if obj.object.primitive_poses[0].position.z < 0.5:
@@ -195,26 +190,7 @@ class GraspingClient(object):
 		    return obj.object, obj.grasps
 		# nothing detected
 		return None, None
-	if i == 3:
-		for obj in self.objects:
-			    # need grasps
-			if len(obj.grasps) < 1:
-				continue
-			    # check size
-			if obj.object.primitives[0].dimensions[0] < 0.04 or \
-			   obj.object.primitives[0].dimensions[0] > 0.35 or \
-			   obj.object.primitives[0].dimensions[0] < 0.04 or \
-			   obj.object.primitives[0].dimensions[0] > 0.35 or \
-			   obj.object.primitives[0].dimensions[0] < 0.04 or \
-			   obj.object.primitives[0].dimensions[0] > 0.35:
-			     continue
-			    # has to be on table
-			if obj.object.primitive_poses[0].position.z < 0.5:
-			     continue
-			print obj.object.primitive_poses[0], obj.object.primitives[0]
-			return obj.object, obj.grasps
-			# nothing detected
-		return None, None
+	
 
     def getSupportSurface(self, name):
         for surface in self.support_surfaces:
@@ -367,7 +343,7 @@ if __name__ == "__main__":
             if (i == 1):
                 pose.pose.position.x = 0.65
                 pose.pose.position.y *= -1.4
-                pose.pose.position.z += 0.08
+                pose.pose.position.z += 0.09
             else:
                 pose.pose.position.x = 0.7
                 pose.pose.position.y *= -0.8

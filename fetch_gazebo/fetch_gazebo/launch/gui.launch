@@ -1,4 +1,0 @@
-<launch>
-
-    <node name="fetch_gui" pkg="fetch_gazebo" type="fetch_gui.py" output="screen"/>
-</launch>
