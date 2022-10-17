@@ -13,8 +13,10 @@
  > catkin_make
  
  > source devel/setup.bash
+ 
  Setup up the simulated environment
  > roslaunch fetch_gazebo environment.launch 
+ 
  Running the simulation
  > roslaunch fetch_gazebo simulation.launch  
  
