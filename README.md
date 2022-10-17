@@ -1,9 +1,9 @@
 # Sensors and Control
- Fetch Robot Pick and Place Simulation in Ubuntu 18.04 and ROS Melodic
+ Fetch Robot Pick and Place Simulation using Ubuntu 18.04 and ROS Melodic
  
- Created by Justin Sia, Felix Watson and Tun Tun Lin
+ Contributors: Justin Sia, Felix Watson and Tun Tun Lin
  
- # Setup
+ ## Installation and Setup Guide
  1. [Install ROS Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) and setup a catkin workspace using the tutorial [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
  2. Download the required fetch robot packages using the tutorial on the fetch robot [ROS Melodic installation guide](https://docs.fetchrobotics.com/indigo_to_melodic.html)
  3. Git clone this respository into your ~/catkin/src folder or downloading it manually
