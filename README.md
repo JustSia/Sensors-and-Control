@@ -9,8 +9,12 @@
  > git clone https://github.com/JustSia/Sensors-and-Control.git
  4. Run the cmake command and the following launch files in order to begin the simulation
  > cd ~/catkin_ws
+
  > catkin_make
+ 
  > source devel/setup.bash
+ 
  > roslaunch fetch_gazebo environment.launch # Setup up the simulated environment
+ 
  > roslaunch fetch_gazebo simulation.launch  # Running the simulation
  
