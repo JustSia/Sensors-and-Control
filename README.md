@@ -4,16 +4,7 @@
  Contributors: Justin Sia, Felix Watson and Tun Tun Lin
  
  ## Project Description
- <div class="embed-container">
-  <iframe
-      src="https://drive.google.com/file/d/1k5hlrz_heq6OpywA9cQgUaULV4gMZsIM/preview"
-      width="700"
-      height="480"
-      frameborder="0"
-      scrolling="no"
-      allowfullscreen="true">
-  </iframe>
-</div>
+ {% include video.html id=page.1k5hlrz_heq6OpywA9cQgUaULV4gMZsIM %}
  
  The goal of this project is to demonstrate the use of visual servoing in the fetch robot in order to grasp objects. In order to demonstrate this, a simple task was setup in which the robot was required to move differently shaped objects to a designated goal within a dining kitchen environment. 
  
