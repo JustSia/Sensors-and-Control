@@ -42,7 +42,7 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  roslaunch fetch_gazebo_demo simulation.launch  
  ```
  ## Troubleshooting
- ####"File doesn't exist"
+ #### "File doesn't exist"
  Make sure you set the source to the right place every time you open a new terminal or tab
  ```
  source ~/catkin_ws/devel/setup.bash
