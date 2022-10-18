@@ -1,4 +1,6 @@
 # Sensors and Control
+![logo](https://user-images.githubusercontent.com/114462972/196306117-f3b0e14d-67cd-4925-a174-775d9f86fc4f.png)
+
  Fetch Robot Pick and Place Simulation using Ubuntu 18.04 and ROS Melodic
  
  Contributors: Justin Sia, Felix Watson and Tun Tun Lin
