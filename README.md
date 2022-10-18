@@ -33,7 +33,7 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  ```
  * Run the simulation
  ```sh
- source ~/caatkin_ws/devel/setup.bash
+ source ~/catkin_ws/devel/setup.bash
  roslaunch fetch_gazebo environment.launch 
  ```
  * Open a new terminal and run the following to start the simulation
@@ -42,6 +42,10 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  roslaunch fetch_gazebo_demo simulation.launch  
  ```
  ## Troubleshooting
- ...
+ ####"File doesn't exist"
+ Make sure you set the source to the right place every time you open a new terminal or tab
+ ```
+ source ~/catkin_ws/devel/setup.bash
+ ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
