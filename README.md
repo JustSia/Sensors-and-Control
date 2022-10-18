@@ -1,5 +1,6 @@
 # Sensors and Control
-![logo](https://user-images.githubusercontent.com/114462972/196306166-90e6469a-723d-40e3-8349-cb855da70e09.png)
+![Screenshot 2022-10-18 111105](https://user-images.githubusercontent.com/114462972/196306266-876cbc99-95ba-4eff-8eec-b6b92747ec01.png)
+
 
  Fetch Robot Pick and Place Simulation using Ubuntu 18.04 and ROS Melodic
  
