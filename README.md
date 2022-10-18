@@ -20,7 +20,12 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  cd ~/catkin_ws/src
  git clone https://github.com/JustSia/Sensors-and-Control.git
  ```
- 4. Run the cmake command and the following launch files in order to begin the simulation
+ 4. Make sure the code is executable
+ ```sh
+ cd ~/catkin_ws/src/fetch_gazebo/fetch_gazebo_demo/scripts
+ chmod +x simulation.py
+ ```
+ 6. Run the cmake command and the following launch files in order to begin the simulation
  * Build the workspace
  ```sh
  cd ~/catkin_ws
@@ -28,9 +33,13 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  ```
  * Run the simulation
  ```sh
- source devel/setup.bash
+ source ~/caatkin_ws/devel/setup.bash
  roslaunch fetch_gazebo environment.launch 
- roslaunch fetch_gazebo simulation.launch  
+ ```
+ * Open a new terminal and run the following to start the simulation
+ ```sh
+ source ~/catkin_ws/devel/setup.bash
+ roslaunch fetch_gazebo_demo simulation.launch  
  ```
  ## Troubleshooting
  ...
