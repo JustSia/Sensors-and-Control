@@ -31,3 +31,5 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  roslaunch fetch_gazebo environment.launch 
  roslaunch fetch_gazebo simulation.launch  
  ```
+ ## Troubleshooting
+ ...
