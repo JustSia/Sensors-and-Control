@@ -2,7 +2,7 @@
 ![Screenshot 2022-10-18 111105](https://user-images.githubusercontent.com/114462972/196306266-876cbc99-95ba-4eff-8eec-b6b92747ec01.png)
 
 
- Fetch Robot Pick and Place Simulation using Ubuntu 18.04 and ROS Melodic
+ ### **Fetch Robot Pick and Place Simulation using Ubuntu 18.04 and ROS Melodic**
  
  Contributors: Justin Sia, Felix Watson and Tun Tun Lin
  
