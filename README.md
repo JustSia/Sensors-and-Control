@@ -43,7 +43,7 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  ```
  ## Troubleshooting
  #### "File doesn't exist"
- Make sure you set the source to the right place every time you open a new terminal or tab
+ Make sure the source is set to the right place every time a new terminal or tab is open
  ```
  source ~/catkin_ws/devel/setup.bash
  ```
