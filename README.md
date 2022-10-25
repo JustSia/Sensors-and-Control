@@ -52,5 +52,12 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  ```
  source ~/catkin_ws/devel/setup.bash
  ```
+ 
+ #### 2. Error: "CMake Error: Could not find a package configuration file provided by "name""
+ Install missing packages, replace name with the missing package name, use "-" for spaces between the name.
+ ```
+ sudo apt install ros-melodic-name
+ ```
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
