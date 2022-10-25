@@ -3,16 +3,12 @@
 ### **Fetch Robot Pick and Place Simulation using Ubuntu 18.04 and ROS Melodic**
 ![Screenshot 2022-10-18 111105](https://user-images.githubusercontent.com/114462972/196306266-876cbc99-95ba-4eff-8eec-b6b92747ec01.png)
  
- Contributors: 
- - Justin Sia (33%)
- - Felix Watson (33%)
- - Tun Tun Lin (33%)
 
 | Contributors  | Description   | Percentage Contribution |
 | ------------- | ------------- | ----------------------- | 
 | Justin Sia    | Perception and Visual Servoing  | 33%                     |
 | Felix Watson  | Object and Environment Generation  | 33%                     |
-| Tun Tun Lin  | Arm and Base movement kinematics | 33%                     |
+| Tun Tun Lin  | Arm and Base Movement Kinematics | 33%                     |
  
  ## Project Description
  
