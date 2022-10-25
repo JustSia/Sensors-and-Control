@@ -27,8 +27,13 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  ```
  4. Make sure the code is executable
  ```sh
- cd ~/catkin_ws/src/fetch_gazebo/fetch_gazebo_demo/scripts
- chmod +x simulation.py
+ cd ~/catkin_ws/src/Sensors-and-Controlfetch_gazebo/fetch_gazebo_demo/scripts
+ sudo chmod +x simulation.py
+ ```
+ ```sh
+ cd ~/catkin_ws/src/Sensors-and-Controlfetch_gazebo/fetch_gazebo/scripts
+ sudo chmod +x prepare_simulated_robot.py
+ sudo chmod +x prepare_simulated_robot_pick_place.py
  ```
  6. Run the cmake command and the following launch files in order to begin the simulation
  * Build the workspace
