@@ -273,12 +273,6 @@ if __name__ == "__main__":
     head_action = PointHeadClient()
     grasping_client = GraspingClient()
 
-    # Move the base to be in front of the table
-    # Demonstrates the use of the navigation stack
-    rospy.loginfo("Moving to table...")
-    #move_base.goto(2.250, 3.118, 0.0)
-    #move_base.goto(2.750, 3.118, 0.0)
-
     # Raise the torso using just a controller
     rospy.loginfo("Raising torso...")
     torso_action.move_to([0.4, ])
@@ -339,7 +333,6 @@ if __name__ == "__main__":
             pose = PoseStamped()
             pose.pose = cube.primitive_poses[0]
             print(cube.primitive_poses[0])
-            print(i)
             if (i == 1):
                 pose.pose.position.x = 0.65
                 pose.pose.position.y *= -1.4
@@ -363,7 +356,6 @@ if __name__ == "__main__":
         grasping_client.intermediate_stow()
         grasping_client.stow()
         rospy.loginfo("Finished")
-        print(i)
         if (i == 2):
             rospy.signal_shutdown('Shutting Down')
 	i += 1
