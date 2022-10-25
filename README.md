@@ -59,5 +59,11 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  sudo apt install ros-melodic-name
  ```
  
+ #### 3. Error: "resource not found: name"
+ Install missing packages, replace name with the missing package name, use "-" for spaces between the name.
+ ```
+ sudo apt install ros-melodic-name
+ ```
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
