@@ -47,7 +47,7 @@ The goal of this project is to demonstrate the use of visual servoing in the fet
  roslaunch fetch_gazebo_demo simulation.launch  
  ```
  ## Troubleshooting
- #### "RLException: [filename] is neither a launch file in package [filename] nor is [filename] a launch file name."
+ #### Error: "RLException: [filename] is neither a launch file in package [filename] nor is [filename] a launch file name."
  Make sure the source is set to the right place every time a new terminal or tab is open
  ```
  source ~/catkin_ws/devel/setup.bash
