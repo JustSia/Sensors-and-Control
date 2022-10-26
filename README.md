@@ -11,8 +11,9 @@
 | Tun Tun Lin  | Arm and Base Movement Kinematics | 33%                     |
  
  ## Project Description
- 
-https://user-images.githubusercontent.com/114462972/196305940-2b325108-ee9d-44a8-9ba9-03a2446ea1bc.mp4
+
+https://user-images.githubusercontent.com/114462972/197919760-2bbb8018-af49-4930-9697-f5fc90627e82.mp4
+
 
 The goal of this project is to demonstrate the use of visual servoing in the fetch robot in order to grasp objects. In order to demonstrate this, a simple task was setup in which the robot was required to move differently shaped objects to a designated goal within a dining kitchen environment. 
  
