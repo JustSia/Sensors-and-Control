@@ -165,7 +165,12 @@ class GraspingClient(object):
 		    if len(obj.grasps) < 1:
 		        continue
 		    # check size
-		    if obj.object.primitives[0].dimensions[0] < 0 and obj.object.primitives[0].dimensions[0] > 1000:
+                if obj.object.primitives[0].dimensions[0] < 0.04 or \
+               	obj.object.primitives[0].dimensions[0] > 0.25 or \
+               	obj.object.primitives[0].dimensions[0] < 0.04 or \
+               	obj.object.primitives[0].dimensions[0] > 0.25 or \
+               	obj.object.primitives[0].dimensions[0] < 0.04 or \
+               	obj.object.primitives[0].dimensions[0] > 0.25:
 		        continue
 		    # has to be on table
 		    if obj.object.primitive_poses[0].position.z < 0.5:
@@ -181,7 +186,12 @@ class GraspingClient(object):
 		    if len(obj.grasps) < 1:
 		        continue
 		    # check size
-		    if obj.object.primitives[0].dimensions[0] < 0 and obj.object.primitives[0].dimensions[0] > 1000:
+                if obj.object.primitives[0].dimensions[0] < 0.04 or \
+               	obj.object.primitives[0].dimensions[0] > 0.25 or \
+               	obj.object.primitives[0].dimensions[0] < 0.04 or \
+               	obj.object.primitives[0].dimensions[0] > 0.25 or \
+               	obj.object.primitives[0].dimensions[0] < 0.04 or \
+               	obj.object.primitives[0].dimensions[0] > 0.25:
 		        continue
 		    # has to be on table
 		    if obj.object.primitive_poses[0].position.z < 0.5:
